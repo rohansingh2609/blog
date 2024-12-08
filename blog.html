@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog Post - The Student Voice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">The Student Voice</div>
+                <div class="nav-links">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="#"><i class="fas fa-list"></i> Blogs</a>
+                    <a href="profile.html"><i class="fas fa-info-circle"></i> Profile</a>
+                    <a href="support.html"><i class="fas fa-envelope"></i> Support</a>
+                </div>
+                <div class="nav-links">
+                    <a href="login.html"> Login</a>
+                    <a href="register.html"> Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="centered-content">
+            <div class="content">
+                <h1>Create a New Blog Post</h1>
+                <div class="blog-creation-container">
+                    <div class="tabs">
+                        <button class="tab-button active" data-tab="edit">Edit</button>
+                        <button class="tab-button" data-tab="preview">Preview</button>
+                    </div>
+                    <div class="tab-content active" id="edit">
+                        <form id="blogForm" class="blog-form">
+                            <div class="form-group">
+                                <label for="title">Title:</label>
+                                <input type="text" id="title" name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="category">Category:</label>
+                                <select id="category" name="category" required>
+                                    <option value="">Select a category</option>
+                                    <option value="topic1">Topic 1</option>
+                                    <option value="topic2">Topic 2</option>
+                                    <option value="topic3">Topic 3</option>
+                                    <option value="topic4">Topic 4</option>
+                                    <option value="topic5">Topic 5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="content">Content:</label>
+                                <textarea id="content" name="content" rows="10" required></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" id="resetBtn" class="login-page-button">Reset</button>
+                                <button type="submit" class="login-page-button">Publish Blog Post</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-content" id="preview">
+                        <div id="previewContent" class="preview-content">
+                            <h2 id="previewTitle"></h2>
+                            <p><strong>Category:</strong> <span id="previewCategory"></span></p>
+                            <div id="previewBody"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; BSC-IT Blog Post Project. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
